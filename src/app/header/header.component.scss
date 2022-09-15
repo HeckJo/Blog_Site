@@ -1,0 +1,28 @@
+
+.top-bar{
+    height: 5%;
+    min-height: 40px;
+    background-color: rgb(46, 137, 168);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    /*border-color: rgba(46, 137, 168,0.5);
+    /*border-radius: 2px;*/
+}
+.last-item{
+    margin-left: auto !important;
+    padding-right: 10px;
+    /* add: flex position to not show menu buttons (always show last item) */
+}
+.menu-button{
+    margin-left: 30px;
+
+}
+.home-link-text{
+    font-size: 26px;
+    font-weight: 600;
+    background-color: rgb(46, 137, 168);
+}
+.access-button{
+    font-weight: 600;
+}
