@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewEntryComponent implements OnInit {
 
+  saveMe() {
+    alert("Hello World");
+    //var requestTime = document.getElementById("new-date-time");
+    //window.alert(requestTime);
+  } 
   constructor() { }
 
   ngOnInit(): void {

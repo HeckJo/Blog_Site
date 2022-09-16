@@ -1,1 +1,19 @@
-<p>new-entry works!</p>
+<!-- input-ID variabel machen für ngFor?-->
+<div class="container">
+    <div class="element">
+        <input id="new-input" type="text" placeholder="new entry">
+    </div>
+    <div class="element">
+        <select name="Time" id="new-date-time">
+            <option value="current">current</option>
+            <option value="specified-time">specify own:</option>
+        </select>
+        <div class="time-option">
+            <input type="datetime-local">
+            <!--show date-time menu when specify own is chosen-->
+        </div>
+    </div>
+    <div class="element">
+        <button (click)="saveMe()">Save!</button>
+    </div>
+</div>
