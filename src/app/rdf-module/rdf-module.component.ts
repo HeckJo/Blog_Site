@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {foaf} from "rdf-namespaces";
 
 @Component({
   selector: 'app-rdf-module',
