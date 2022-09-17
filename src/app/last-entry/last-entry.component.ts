@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RdfModuleComponent } from '../rdf-module/rdf-module.component';
 
 @Component({
   selector: 'app-last-entry',
@@ -6,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./last-entry.component.scss']
 })
 export class LastEntryComponent implements OnInit {
+
+  rdf = new RdfModuleComponent();
+
+  lastdateTime = this.rdf.lastDate.toUTCString();
+  lastItem = this.rdf.lastEntry;
+
+
+
 
   constructor() { }
 

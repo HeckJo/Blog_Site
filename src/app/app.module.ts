@@ -6,6 +6,8 @@ import { HeaderComponent } from './header/header.component';
 import { CategoryComponent } from './category/category.component';
 import { NewEntryComponent } from './new-entry/new-entry.component';
 import { LastEntryComponent } from './last-entry/last-entry.component';
+import { NewCategoryComponent } from './new-category/new-category.component';
+import { RdfModuleComponent } from './rdf-module/rdf-module.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { LastEntryComponent } from './last-entry/last-entry.component';
     HeaderComponent,
     CategoryComponent,
     NewEntryComponent,
-    LastEntryComponent
+    LastEntryComponent,
+    NewCategoryComponent,
+    RdfModuleComponent
   ],
   imports: [
     BrowserModule

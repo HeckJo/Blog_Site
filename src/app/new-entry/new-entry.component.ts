@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-new-entry',
@@ -7,14 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewEntryComponent implements OnInit {
 
-  saveMe() {
-    alert("Hello World");
-    //var requestTime = document.getElementById("new-date-time");
-    //window.alert(requestTime);
-  } 
-  constructor() { }
+  category = '%%var getLater%%';
+  hideMe = true;
+  defaultTime = new Date();
 
-  ngOnInit(): void {
+  saveAction(){
+    var newItemName = (document.getElementById('entryText') as HTMLTextAreaElement).value;
+    var selTime = new Date();
+    alert()
+    alert("saved " + newItemName + " at " + selTime);
   }
 
+  constructor() { }
+  ngOnInit(): void {  }
 }
