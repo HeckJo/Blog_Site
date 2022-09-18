@@ -18,6 +18,8 @@
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
+    "@inrupt/solid-client": "^1.23.3",
+    "@inrupt/vocab-common-rdf": "^1.0.5",
     "rdf-namespaces": "^1.9.2",
     "rxjs": "~7.5.0",
     "solid-auth-client": "^2.5.6",

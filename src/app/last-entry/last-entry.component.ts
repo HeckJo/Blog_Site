@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { RdfModuleComponent } from '../rdf-module/rdf-module.component';
-import { fetchDocument } from 'tripledoc';
-import { foaf } from 'rdf-namespaces';
-import { emergency } from 'rdf-namespaces/dist/contact';
+import { RdfService } from '../rdf.service';
+
 @Component({
   selector: 'app-last-entry',
   templateUrl: './last-entry.component.html',
@@ -10,24 +8,14 @@ import { emergency } from 'rdf-namespaces/dist/contact';
 })
 export class LastEntryComponent implements OnInit {
 
-  test = this.getSomething();
-  rdf = new RdfModuleComponent();
 
-  lastdateTime = this.rdf.lastDate.toUTCString();
-  lastItem = this.test;
+  lastdateTime = new Date();
+  lastItem = this.rdf.firstRDF();
 
-  async getSomething(){
-    let webId = "https://www.w3.org/People/Berners-Lee/card#i";
-    const profileDoc = await fetchDocument(webId);
-    const profile = profileDoc.getSubject(webId);
-    let erg = profile.getString('http://xmlns.com/foaf/0.1/name');
-    return erg;
-  }
+  
 
+  constructor(private rdf : RdfService) { }
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
 }
