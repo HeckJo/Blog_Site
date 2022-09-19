@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RdfService } from '../rdf.service';
 
+
 @Component({
   selector: 'app-last-entry',
   templateUrl: './last-entry.component.html',
@@ -10,8 +11,12 @@ export class LastEntryComponent implements OnInit {
 
 
   lastdateTime = new Date();
-  lastItem = this.rdf.firstRDF();
+  lastItem = this.rdf.lastEntry("cat");
 
+  update () {
+    this.lastItem = this.rdf.lastEntry("cat");
+    this.lastdateTime = new Date();
+  }
   
 
   constructor(private rdf : RdfService) { }

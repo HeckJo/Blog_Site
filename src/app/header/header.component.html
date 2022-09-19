@@ -3,19 +3,14 @@
     <div class="menu-button">
         <button class="main-font home-link-text">SolidBowel 2.0</button>
     </div>
-
-    <!--Username-->
-    <div class="menu-button">
-        <p class="main-font menu-button">User: "placeholder"</p>
+    <div>
+        <p class="menu-button access-button">{{ name }}</p>
     </div>
-
-    <!--Server of User Profile-->
-    <div class="menu-button">
-        <p class="main-font menu-button">Server: "placeholder"</p>
+    <div>
+        <p class="menu-button access-button">{{ server }}</p>
     </div>
-
-    <!--Log-in/out for User-->
+    <!--Log-in for User-->
     <div class="last-item menu-button access-button">
-        <p class="menu-button access-button main-font">Log-in/out</p>
+        <button class="menu-button access-button last-item" (click)="login()">Log-in</button>
     </div>
 </div>
