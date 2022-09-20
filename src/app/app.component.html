@@ -1,5 +1,7 @@
 <app-header></app-header>
 <div>
     <app-new-category></app-new-category>
-    <app-category></app-category>
+</div>
+<div id="categoryCountDiv">
+    <app-category id="categoryCount" *ngFor="let thing of things">{{thing}}</app-category>
 </div>

@@ -11,13 +11,11 @@ export class LastEntryComponent implements OnInit {
 
 
   lastdateTime = new Date();
-  lastItem = this.rdf.lastEntry("cat");
+  lastItem : String | false = "cat";
 
-  update () {
-    this.lastItem = this.rdf.lastEntry("cat");
-    this.lastdateTime = new Date();
+  async clickMe() {
+    alert(await this.rdf.arrayCategories() + " button ");
   }
-  
 
   constructor(private rdf : RdfService) { }
 

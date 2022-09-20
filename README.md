@@ -27,10 +27,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 TODO:
-Fix - header update automatically after async function finishes (currently manual refresh necessary).
+Fix - header update automatically after async function finishes (currently manual refresh necessary). ("await")
 Add - get categories
 Add - show all categories in page
 Add - functionality add category
 Add - save Entry
 Add - get last Entry (Name and DateTime)
-Add - manual refresh button
+Fix - manual refresh button

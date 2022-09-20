@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoryComponent implements OnInit {
 
+  refreshContent() {
+    alert("refreshing...");
+  }
   constructor() { }
 
   ngOnInit(): void {

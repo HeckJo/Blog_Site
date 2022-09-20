@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
 
   login() {
     this.rdf.loginAndFetch();
-    this.name = this.rdf.getUsername();
+    this.name = this.rdf.getUsername()!;
     this.server = this.rdf.getHostServer();
   }
   
